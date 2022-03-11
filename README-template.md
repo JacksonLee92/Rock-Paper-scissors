@@ -14,8 +14,7 @@ Users should be able to:
 ### Screenshot
 
 (images/ScreenShot.png)
-THE GITHUB PAGE == https://github.com/itsyaba/Rock--Paper-scissors.git
-The LIVE PAGE == https://frontend-mentor-rock-paper-scissors-challenge.netlify.app/
+
 ## My process
 
 ### Built with
@@ -44,4 +43,3 @@ const proudOfThisFunc = () => {
   console.log('🎉'  * 30)
 }
 ```
-
