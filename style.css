@@ -24,7 +24,13 @@ body{
       font-family: 'Barlow Semi Condensed', sans-serif;
       text-align: center;
       background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-      overflow-x: hidden;
+      overflow: hidden;
+}
+
+@media (max-width:600px){
+      body{
+            overflow-y: scroll;
+      }
 }
 
 .header{
@@ -64,6 +70,8 @@ body{
 @media (max-width:1000px){
       .header{
             flex-direction: column;
+            margin-top: 1em;
+            margin-bottom: -5em;
       }
 
       .header img{
@@ -118,7 +126,14 @@ main img{
 
 }
 
+
+
+
 @media (max-width:900px){
+      .body-one{
+            height: 20vh;
+      }
+
       main img{
             padding:2em;
             width: 13rem;
@@ -156,11 +171,7 @@ main img{
       
 }
 
-@media (max-width:900px){
-      .body-two{
-            width: auto;
-      }
-}
+
 
 .rock:hover , 
 .scissors:hover , 
@@ -194,6 +205,17 @@ main img{
       /* padding: 6em 0; */
 }
 
+/* @media (max-width:900px){
+      .body-two-hands{
+            width: auto;
+            justify-content: space-around;
+      }
+
+      .body-two-hands img{
+            margin: 1em ;
+      }
+} */
+
 .heads h1{
       color: wheat;
       font-size: 3rem;
@@ -218,28 +240,7 @@ main img{
       cursor: pointer;
 }
 
-footer{
-      text-align: center;
-      height: 40vh;
-      display: flex;
-      align-items: flex-end;
-      justify-content:center;
-
-}
-
-
-#btn{
-      padding: 1.5em 3em;
-      background-color: transparent;
-      border: 2px solid wheat;
-      color: white;
-      text-transform: uppercase;
-      border-radius: 8px;
-      transform: translateX(250%);
-      cursor: pointer;
-      z-index: 10;
-}
-
+/*
 @media (max-width:1000px){
       footer{
             flex-direction: row;
@@ -252,6 +253,20 @@ footer{
             transform: translateX(0);
             margin-bottom:1em;
       }
+} */
+
+#btn{
+      padding: 1.5em 3em;
+      background-color: transparent;
+      border: 2px solid wheat;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 8px;
+      position: absolute;
+      right: 3%;
+      bottom: 3%;
 }
 
 .attribution { 
@@ -260,6 +275,10 @@ footer{
       color:aliceblue;
       text-transform: uppercase;
       font-weight: 900;
+      position: fixed;
+      bottom: 0%;
+      left: 50%;
+      transform: translate(-50% , -50%);
 
 }
 .attribution a {
