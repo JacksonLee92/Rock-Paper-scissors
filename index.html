@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta autor="Yaba" content="This is a website which you can play rock, paper , scissors">  
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header class="header" id="header">
+      <img src="images/logo.svg" alt="LOGO">
+      <div class="result">
+        <h2>Score</h2>
+        <h3 id="score">0</h3>
+      </div>
+    </header>
+    <main>
+      <div class="body-one">
+        <h1>pick one</h1>
+        <div class="hero-hands">
+          <div class="hands">
+            <img src="images/icon-rock.svg" alt="ROCK" class="rock two-hands games" id="rock" >
+            <img src="images/icon-scissors.svg" alt="scissors" id="scissors" class="scissors two-hands games">
+            
+          </div>
+          <img src="images/icon-paper.svg" alt="Paper" id="paper" class="paper games">
+        </div>
+      </div>
+      <div class="body-two">
+        <div class="heads">
+          <h1>you picked</h1>
+          <h1>The house <br> picked</h1>
+        </div>
+        <div class="body-two-hands">
+          <img src="" alt="Your Choice" class="your-choice pa-img">
+
+          <div class="tells">
+            <h2 class="who-wons">Who Won</h2>
+            <button id="btn2">Play Again</button>   
+          </div>
+
+          <img src="" alt="The House Choice" class="comp-choice pa-img">          
+        </div>
+      </div>
+    </main>
+    <section class="pop-up">
+      <div class="rules">
+        <h1>Rules</h1>
+        <img src="images/icon-close.svg" alt="CLOSE" class="close">
+      </div>
+      <div class="rule-img">
+        <img src="images/image-rules.svg" alt="THE RULES">
+      </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/itsyaba">YEABSIRA</a>.
+      </div>
+      <button class="btn rule-btn" id="btn">Rules</button>
+    </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
