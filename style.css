@@ -21,7 +21,6 @@ html{
 }
 
 body{
-      height: auto;
       font-family: 'Barlow Semi Condensed', sans-serif;
       text-align: center;
       background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -84,7 +83,6 @@ body{
       flex-direction: column;
       margin-top: 5em;
       padding: 1.25em;
-      /* display: none; */
 }
 
 .body-one h1{
@@ -141,6 +139,12 @@ main img{
       border: 14px solid var(--Paper-Gradient);
       box-shadow: inset 1px 10px 0px rgba(0, 0, 0, 0.316);
       
+}
+
+@media (max-width:900px){
+      .body-two{
+            width: auto;
+      }
 }
 
 .rock:hover , 
@@ -209,11 +213,6 @@ footer{
 
 }
 
-@media (max-width:600px){
-      footer{
-            flex-direction: column;
-      }
-}
 
 #btn{
       padding: 1.5em 3em;
@@ -227,9 +226,15 @@ footer{
       z-index: 10;
 }
 
-@media(max-width:900px){
-      #btn{
+@media (max-width:1000px){
+      footer{
+            flex-direction: column;
+            align-items: center;
+      }
+
+       #btn{
             transform: translateX(0);
+            margin-top: 2em;
       }
 }
 
